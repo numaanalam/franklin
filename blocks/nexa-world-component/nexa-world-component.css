@@ -1,0 +1,157 @@
+.nexa-world__container {
+    background-color: black;
+    color: white;
+    font-family: "Fira-Sans";
+    padding-top: 48px;
+    padding-left: 20px;
+    p{
+      margin:unset;
+      font-size:unset;
+    }
+    h2{
+      margin:unset;
+      font-size:unset;
+    }
+    ul{
+      margin:unset;
+    }
+  }
+  .nexa-world__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      width:70%;
+      @media (min-width: 999px) {
+        width: 376px;
+        font-size:18px;
+        font-weight: 300;
+        line-height:24px;
+      }
+    }
+  }
+  .nexa-world__title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-style: "Kepler Std";
+    .pre-title {
+      font-style: italic;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      @media(min-width:999px) {
+        font-size:48px;
+        line-height: 56px;
+      }
+    }
+    .title {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: 0.64px;
+      @media(min-width:999px){
+         font-size:84px;
+         font-weight:700;
+         line-height:96px;
+         letter-spacing: 1.68px;
+      }
+    }
+  }
+
+  .nexa-world__teaser {
+    margin-top:72px;
+    padding-bottom:45%;
+    @media(min-width:999px){
+    padding-top:30%;
+    margin-top:0px;
+    padding-bottom:85.5px;
+  }
+  }
+  .nexa-world__links {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      @media(min-width:999px){
+        flex-direction:row;
+        gap:24px;
+      }
+      a {
+        text-decoration: none;
+        color: unset;
+      }
+      li {
+        color: #b2b2b2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        img{
+          display:none;
+        }
+      }
+      li:hover {
+        font-weight: 500;
+        cursor: pointer;
+        color: #ffffff;
+      }
+    }
+  }
+  .nexa-world__action {
+    display: inline-flex;
+    width:fit-content;
+    height: 40px;
+    background-color: #ffffff;
+    padding: 8px 12px;
+    clip-path: polygon(2% 0, 100% 0, 100% 88%, 98% 100%, 0 100%, 0 12%);
+    .btn-title {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-right:12px;
+      }
+    } 
+    .btn-title::after{
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image:url("../../icons/location__icon.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .nexa-world__container, .nexa-world__teaser {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height:auto;
+  }
+  .nexa-world__container{
+    height:auto;
+  }
+  @media (max-width: 999px) {
+    .nexa-world__container {
+      background-image: none;
+      height:auto;
+    }
+    .nexa-world__teaser{
+      height:auto;
+    }
+  }
+  @media (min-width: 1000px) {
+    .nexa-world__teaser {
+      background-image: none;
+    }
+  }

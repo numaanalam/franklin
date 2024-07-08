@@ -1,0 +1,229 @@
+.control-panel {
+    --panel-bg-color: rgba(72, 52, 37, 0.24);
+    --interaction-bg-color: rgba(72, 52, 37, 0.24);
+    --button-bg-color: rgba(255, 255, 255, 0.24);
+  }
+  
+  .control-panel {
+    position: fixed;
+    top:calc(var(--nav-height) + 10px);
+    right: 10px;
+    border: 1px solid black;
+    background-color: var(--panel-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 240px;
+  }
+  
+  .control-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  /* .inspector-section {
+    border: 1px solid black;
+    background-color: var(--interaction-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  } */
+  
+  .view-section {
+    border: 1px solid black;
+    background-color: var(--interaction-bg-color);
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+  
+  .view-section span {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .top-section button,
+  .view-section button,
+  .inspector-section button,
+  .add-remove-buttons button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 3px 8px;
+    font-size: 14px;
+    border: 1px solid black;
+    background-color: var(--button-bg-color);
+  }
+  
+  .view-section .view-button:hover {
+    background-color: rgba(139, 69, 19, 0.3);
+  }
+  
+  .view-section .exterior,
+  .view-section .interior {
+    display: inline-block;
+  }
+  
+  .view-section .backseat,
+  .view-section .frontseat {
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .view-buttons,
+  .inspector-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* MICRO INTERACTIONS */
+  
+  .micro-interaction,
+  .accessory-section {
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid black;
+    background-color: var(--interaction-bg-color);
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+  
+  .micro-interaction span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .toggle-light,
+  .toggle-orvm,
+  .toggle-door,
+  .toggle-wheel,
+  .add-remove-buttons {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2px;
+  }
+  
+  .add-remove-buttons button {
+    width: 100%;
+  }
+  
+  .toggle-light .option-text,
+  .toggle-orvm .option-text,
+  .toggle-door .option-text,
+  .toggle-wheel .option-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .toggle-light input,
+  .toggle-orvm input,
+  .toggle-door input,
+  .toggle-wheel input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    display: inline-block !important;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    background-color: var(--button-bg-color);
+    transition: 0.4s;
+    border-radius: 34px;
+    vertical-align: middle;
+  }
+  
+  .slider::before,
+  .slider::after {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 1;
+  }
+  
+  .slider::before {
+    content: "Off";
+    left: 5px;
+  }
+  
+  .slider::after {
+    content: "On";
+    right: 5px;
+    opacity: 0;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider::before {
+    opacity: 0;
+  }
+  
+  input:checked + .slider::after {
+    opacity: 1;
+  }
+  
+  .option-text {
+    font-size: 14px;
+    font-weight: 100 !important;
+  }
+  
+  /* Dropdown Styles */
+  .select-control {
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .select-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .select-control select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    transition: background-color 0.3s;
+  }
+  
+  .select-control select:focus {
+    background-color: rgb(255 255 255 / 24%);
+  }
+  
+  .select-control select option {
+    background-color: rgb(70 47 31 / 65%);
+  }
+  
+  /* CINEMATICS */
+  
+  #cinematic-btn,
+  #exit-cinematic-btn {
+    margin-top: 10px;
+    width: -webkit-fill-available;
+    color: white;
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .accessory-option-text {
+    overflow: scroll;
+    scrollbar-width: none;
+    font-size: 14px;
+    font-weight: 100 !important;
+    display: block;
+  }
+  
+  
+  

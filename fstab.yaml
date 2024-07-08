@@ -1,0 +1,9 @@
+mountpoints:
+  /:
+    url: "https://author-p71852-e1137339.adobeaemcloud.com/bin/franklin.delivery/samplefranklin/eds-universal-editor/main"
+    type: "markup"
+    suffix: ".html"
+  /develop:
+    url: "https://author-p71852-e1137339.adobeaemcloud.com/bin/franklin.delivery/samplefranklin/eds-universal-editor/develop"
+    type: "markup"
+    suffix: ".html"

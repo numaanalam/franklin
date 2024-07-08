@@ -1,0 +1,2644 @@
+[
+  {
+    "id": "title",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jcr:title",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "h1",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "image",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "value": "Default alt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "button",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "pretitle",
+        "value": "",
+        "label": "Pretitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "quote",
+    "fields": [
+      {
+        "component": "text-area",
+        "name": "quote",
+        "value": "",
+        "label": "Quote",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author",
+        "value": ""
+      },
+      {
+        "component": "container",
+        "label": "Container",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "name": "primaryText",
+            "label": "CTA Text",
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "valueType": "string",
+            "name": "primaryLink",
+            "label": "CTA Link"
+          },
+          {
+            "component": "select",
+            "name": "primaryTarget",
+            "value": "",
+            "label": "Open Link in New Page ?",
+            "valueType": "string",
+            "options": [
+              {
+                "name": "Yes",
+                "value": "_blank"
+              },
+              {
+                "name": "No",
+                "value": "_self"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "alt",
+        "value": "",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "pretitle",
+        "value": "",
+        "label": "Pretitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "primaryText",
+        "label": "Primary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "primaryLink",
+        "label": "Primary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "primaryTarget",
+        "value": "",
+        "label": "Open Primary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "secondaryText",
+        "label": "Secondary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "secondaryLink",
+        "label": "Secondary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "secondaryTarget",
+        "value": "",
+        "label": "Open Secondary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "styleTheme",
+        "label": "Theme",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Light",
+            "value": "light-teaser"
+          },
+          {
+            "name": "Dark",
+            "value": "dark-teaser"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "themeType",
+        "label": "Theme Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Buyers Guide",
+            "value": "buyers-guide-teaser"
+          },
+          {
+            "name": "Finance Card",
+            "value": "finance-card-teaser"
+          },
+          {
+            "name": "Header Teaser",
+            "value": "header-image-teaser"
+          },
+          {
+            "name": "Text Only Teaser",
+            "value": "text-only-teaser"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cta",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link"
+      }
+    ]
+  },
+  {
+    "id": "3dConfigurator-js",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "cdnurl",
+        "label": "CDN Url",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "colorId",
+        "label": "Color ID",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "modelId",
+        "label": "Model ID",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "variantId",
+        "label": "Variant ID",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "videoUrl",
+        "label": "Video Url",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "3dConfigurator",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "configTitle",
+        "label": "Configurator Title"
+      }
+    ]
+  },
+  {
+    "id": "links",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "linkItem",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "linkTitle",
+        "label": "Link Title",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "href",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "visual-comparison",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "videoUrl1",
+        "label": "Video Url 1",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "name": "videoUrl2",
+        "label": "Video Url 2",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "visual-comparison-blob",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "videoUrl1",
+        "label": "Video Url 1",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "name": "videoUrl2",
+        "label": "Video Url 2",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "link-list",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Column 1",
+        "name": "col1"
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Column 2",
+        "name": "col2"
+      },
+      {
+        "component": "richtext",
+        "name": "rte2",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Column 3",
+        "name": "col3"
+      },
+      {
+        "component": "richtext",
+        "name": "rte3",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Column 4",
+        "name": "col4"
+      },
+      {
+        "component": "richtext",
+        "name": "rte4",
+        "label": "Rich Text - List",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "logo",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logoImage",
+        "label": "Logo Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "alt",
+        "value": "",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "href",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "teaser-list",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "styleTheme",
+        "label": "Theme",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Light",
+            "value": "light-teaser-list"
+          },
+          {
+            "name": "Dark",
+            "value": "dark-teaser-list"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "themeType",
+        "label": "Theme Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Finance Card List",
+            "value": "finance-card-list"
+          },
+          {
+            "name": "Arena Card List",
+            "value": "arena-card-list"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sign-in",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "rte",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "desktopImage",
+        "label": "Desktop Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "desktopAltText",
+        "label": "Desktop Alt Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mobileAltText",
+        "label": "Mobile Alt Text"
+      },
+      {
+        "component": "select",
+        "name": "target",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctaWithIcon",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "href",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "target",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "contact",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      }
+    ]
+  },
+  {
+    "id": "nav-cars",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Heading"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "subheading",
+        "label": "Sub Heading"
+      }
+    ]
+  },
+  {
+    "id": "nav-compare",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "compare",
+        "label": "Compare"
+      }
+    ]
+  },
+  {
+    "id": "search",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "search",
+        "label": "Search"
+      }
+    ]
+  },
+  {
+    "id": "icontitle",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "required": true
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "iconclicked",
+        "label": "Icon Clicked"
+      }
+    ]
+  },
+  {
+    "id": "nitesh-test",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "foreground-rte",
+        "label": "Rich Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "foreground-title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "foreground-desktopImage",
+        "label": "Desktop Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "foreground-mobileImage",
+        "label": "Mobile Image1",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "background-title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background-mobileImage",
+        "label": "Mobile Image2",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "immersive-teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "alt",
+        "value": "",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "pretitle",
+        "value": "",
+        "label": "Pretitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "ctaTarget",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "widget",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "iconclicked",
+        "label": "Icon Clicked",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "nexa-world",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "pretitle",
+        "value": "",
+        "label": "Pretitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "",
+        "label": "Title Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "href",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "target",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+
+    ]
+  },
+  {
+    "id": "location",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "fylText",
+        "label": "Find Your Location Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "dylText",
+        "label": "Detect Your Location Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "searchText",
+        "label": "Search Text"
+      }
+    ]
+  },
+  {
+    "id": "nexa-hero-banner",
+    "fields": [
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "ctaVisibility",
+        "label": "Enable CTA"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "condition": {
+          "===": [ { "var": "ctaVisibility" }, true ]
+        }
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "condition": {
+          "===": [ { "var": "ctaVisibility" }, true ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "nexa-hero-banner-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "allowMobileVideo",
+        "label": "Separate Video for Mobile"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoMobile",
+        "label": "Mobile Video",
+        "multi": false,
+        "condition": {
+          "===": [ { "var": "allowMobileVideo" }, true ]
+        }
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "addMobileImage",
+        "label": "Separate Image for Mobile"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "mobileImage",
+        "label": "Mobile Image",
+        "multi": false,
+        "condition": {
+          "===": [ { "var": "addMobileImage" }, true ]
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "altText",
+        "label": "Alt Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subTitle",
+        "label": "Sub Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "subText",
+        "label": "Sub text"
+      }
+    ]
+  },
+  {
+    "id": "car-filter",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "subtitle",
+        "label": "Sub Title"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "exshowroomPrefix",
+        "label": "Enter Ex-Showroom Prefix Text"
+      },
+      {
+        "component": "select",
+        "name": "selectVariant",
+        "value": "",
+        "label": "Select Component Variant",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Arena",
+            "value": "arena-variant"
+          },
+          {
+            "name": "Nexa",
+            "value": "nexa-variant"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "filterSelect",
+        "label": "Select Required Filters",
+        "valueType": "string",
+        "options": [
+          { "name": "Body Types", "value": "bodyType" },
+          { "name": "Fuel Options", "value": "fuelOptions" },
+          { "name": "Technology", "value": "technology" },
+          { "name": "Additional Specifications", "value": "additionalSpecifications" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "banner-carousel",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "bannerImage",
+        "label": "Banner Image",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "banner-carousel-car",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "pretitle",
+        "label": "Pretitle"
+      },
+      {
+        "component": "text",
+        "name": "model-id",
+        "label": "Model ID",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "fuelType",
+        "label": "Fuel Type"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "onRoadPrice",
+        "label": "On Road Price"
+      },
+      {
+        "component": "text-input",
+        "name": "primaryText",
+        "label": "Primary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "primaryLink",
+        "label": "Primary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "primaryTarget",
+        "value": "",
+        "label": "Open Primary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "secondaryText",
+        "label": "Secondary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "secondaryLink",
+        "label": "Secondary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "secondaryTarget",
+        "value": "",
+        "label": "Open Secondary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nexa-eshowroom-experience",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "component-id",
+        "label": "Component ID"
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "preTitle",
+        "label": "Price Text"
+      },
+      {
+        "component": "text-input",
+        "name": "secondaryText",
+        "label": "Secondary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "secondaryLink",
+        "valueType": "string",
+        "label": "Secondary CTA Link"
+      }
+    ]
+  },
+  {
+    "id": "nexa-eshowroom-experience-item",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "valueType": "string",
+        "name": "carModelPath",
+        "label": "Enter Car Model",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "slider",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "best-deals",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "subtitle",
+        "value": "",
+        "label": "Subtitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "ctaTarget",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "video-teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "allowMobileVideo",
+        "label": "Separate Video for Mobile"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoMobile",
+        "label": "Mobile Video",
+        "multi": false,
+        "condition": {
+          "===": [ { "var": "allowMobileVideo" }, true ]
+        }
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctaWithChangingIcon",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "iconclicked",
+        "label": "Icon Clicked"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt",
+        "label": "Alt Text"
+      },
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "href",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "target",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "highlight",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "backgroundImage",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "backgroundAlt",
+        "value": "",
+        "label": "Background Image Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "foregroundImage",
+        "label": "Foreground Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "foregroundAlt",
+        "value": "",
+        "label": "Foreground Image Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "pretitle",
+        "value": "",
+        "label": "Pretitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h4",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "ctaTarget",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "backgroundColor",
+        "value": "",
+        "label": "Select Highlight Background Color",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Blue",
+            "value": "blue"
+          },
+          {
+            "name": "Red",
+            "value": "red"
+          },
+          {
+            "name": "Yellow",
+            "value": "yellow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "highlight-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "name": "alt",
+        "value": "",
+        "label": "Alt Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "tabname",
+        "value": "",
+        "label": "Tab Name",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "subtitle",
+        "value": "",
+        "label": "SubTitle",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "expandDescription",
+        "value": "",
+        "label": "Expand Description Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "collapseDescription",
+        "value": "",
+        "label": "Collapse Description Label",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "arena-help-me-select",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Properties",
+        "name": "col1"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "preTitle",
+        "value": "",
+        "label": "PreTitle"
+      },
+      {
+        "component": "richtext",
+        "name": "rteLhs",
+        "label": "Rich Text LHS",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "rteRhs",
+        "label": "Rich Text RHS",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "primaryText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "primaryLink",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "primaryTarget",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "interval",
+        "value": "3",
+        "label": "Spotlight Interval"
+      },
+      {
+        "component": "tab",
+        "label": "Asset 1",
+        "name": "col2"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logoReference1",
+        "label": "Logo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "logoAlt1",
+        "value": "Default alt",
+        "label": "Logo Alt Text"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "carReference1",
+        "label": "Car Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "carAlt1",
+        "value": "Default alt",
+        "label": "Car Alt Text"
+      },
+      {
+        "component": "tab",
+        "label": "Asset 2",
+        "name": "col3"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logoReference2",
+        "label": "Logo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "logoAlt2",
+        "value": "Default alt",
+        "label": "Logo Alt Text"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "carReference2",
+        "label": "Car Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "carAlt2",
+        "value": "Default alt",
+        "label": "Car Alt Text"
+      },
+      {
+        "component": "tab",
+        "label": "Asset 3",
+        "name": "col4"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logoReference3",
+        "label": "Logo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "logoAlt3",
+        "value": "Default alt",
+        "label": "Logo Alt Text"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "carReference3",
+        "label": "Car Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "carAlt3",
+        "value": "Default alt",
+        "label": "Car Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "intro-to-design-car-detail",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video",
+        "label": "Video",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "car-detail-feature",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text",
+        "multi": false
+      },
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "multi": false
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "ctaText",
+        "label": "CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "ctaLink",
+        "label": "CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "ctaTarget",
+        "value": "",
+        "label": "Open Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "feature",
+        "label": "Select Feature Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Interior",
+            "value": "feature-interior"
+          },
+          {
+            "name": "Safety",
+            "value": "feature-safety"
+          },
+          {
+            "name": "Suzuki Connect",
+            "value": "feature-suzuki-connect"
+          },
+          {
+            "name": "Performance",
+            "value": "feature-performance"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nexa-brand-film-carousel",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "subTitle",
+        "value": "",
+        "label": "Sub Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "thumbnail",
+        "label": "Video Thumbnail",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "nexa-brand-film-carousel-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video",
+        "label": "Video",
+        "required": true,
+        "multi": false
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "allowMobileVideo",
+        "label": "Separate Video for Mobile"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoMobile",
+        "label": "Mobile Video",
+        "multi": false,
+        "condition": {
+          "===": [ { "var": "allowMobileVideo" }, true ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "nexa-car-hero-banner",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "exShowroomPriceLabel",
+        "label": "Ex-Showroom Price Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tagline",
+        "label": "Tagline"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "engineLabel",
+        "label": "Engine Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "powerLabel",
+        "label": "Power Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mileageLabel",
+        "label": "Mileage Label"
+      },
+      {
+        "component": "aem-content-fragment",
+        "name": "model-id",
+        "label": "Model ID",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "nexa-car-hero-banner-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "video",
+        "label": "Video",
+        "multi": false
+      },
+      {
+        "component": "boolean",
+        "valueType": "boolean",
+        "name": "allowMobileVideo",
+        "label": "Separate Video for Mobile"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videoMobile",
+        "label": "Mobile Video",
+        "multi": false,
+        "condition": {
+          "===": [ { "var": "allowMobileVideo" }, true ]
+        }
+      },
+      {
+        "component": "text-input",
+        "name": "primaryText",
+        "label": "Primary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "primaryLink",
+        "label": "Primary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "primaryTarget",
+        "value": "",
+        "label": "Open Primary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "secondaryText",
+        "label": "Secondary CTA Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "secondaryLink",
+        "label": "Secondary CTA Link"
+      },
+      {
+        "component": "select",
+        "name": "secondaryTarget",
+        "value": "",
+        "label": "Open Secondary Link in New Page ?",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Yes",
+            "value": "_blank"
+          },
+          {
+            "name": "No",
+            "value": "_self"
+          }
+        ]
+      }
+    ]
+  }
+]

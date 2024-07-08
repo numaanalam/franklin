@@ -1,0 +1,374 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/*
+    Arena Style Begins
+*/
+
+@import url("fonts.css");
+:root {
+  /* ----------------------
+COLOURS BASE PALETTE
+-------------------------- */
+  --secondary-black: #1d1d1d;
+  --secondary-white: #fdfdfd;
+
+  /* Blue Primary Colour */
+  --primary-blue-50: #eff0ff;
+  --primary-blue-100: #cbcdff;
+  --primary-blue-200: #a7abff;
+  --primary-blue-300: #8489ff;
+  --primary-blue-400: #5c62f5;
+  --primary-blue-500: #4046d3;
+  --primary-blue-600: #292fb1;
+  --primary-blue-700: #171c8f;
+  --primary-blue-800: #0a0e6d;
+  --primary-blue-900: #01044b;
+  /* Gray Secondary Colour */
+  --secondary-gray-50: #f4f4f4;
+  --secondary-gray-100: #ededed;
+  --secondary-gray-200: #d8d8d8;
+  --secondary-gray-300: #c4c4c4;
+  --secondary-gray-400: #aeafaf;
+  --secondary-gray-500: #97999b;
+  --secondary-gray-600: #818487;
+  --secondary-gray-700: #6c6f72;
+  --secondary-gray-800: #575a5e;
+  --secondary-gray-900: #434649;
+
+  /* ----------------------
+COLOURS BASE PALETTE
+-------------------------- */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Anek Latin";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+p {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+h1,
+.heading-1 {
+  font-size: 64px;
+  line-height: 80px; /* 125% */
+}
+h2,
+.heading-2 {
+  font-size: 48px;
+  line-height: 65px; /* 135.417% */
+}
+h3,
+.heading-3 {
+  font-size: 24px;
+  line-height: 33px; /* 137.5% */
+}
+h4,
+.heading-4 {
+  font-size: 18px;
+  line-height: 22px; /* 122.222% */
+}
+
+@media (min-width: 999px) {
+  h1,
+  .heading-1 {
+    font-size: 84px;
+    line-height: normal;
+  }
+  h2,
+  .heading-2 {
+    font-size: 64px;
+    line-height: normal;
+  }
+  h3,
+  .heading-3 {
+    font-size: 48px;
+    line-height: normal;
+  }
+  h4,
+  .heading-4 {
+    font-size: 24px;
+    line-height: normal;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px; /* 133.333% */
+  }
+}
+
+/*
+    Arena Style Ends
+*/
+
+:root {
+  /* Nexa colors */
+  --primary-main: #18171a;
+  --tertiary-white: #fff;
+  --tertiary-light-grey: #f2f2f2;
+  --tertiary-medium-grey: #b2b2b2;
+  --tertiary-deep-Grey: #767879;
+  --tertiary-black: #000;
+
+  /* AEM colors */
+  --link-color: #035fe6;
+  --link-hover-color: #136ff6;
+  --background-color: white;
+  --light-color: #eee;
+  --dark-color: #ccc;
+  --text-color: black;
+  --nav-background-color: #f2f2f2;
+
+  /* gradients */
+  --gradient-1: linear-gradient(60.18deg, #c9d3d7 3.71%, #ebebeb 104.51%);
+
+  /* fonts */
+  --body-font-family: "Fira Sans";
+  --heading-font-family: var(--body-font-family);
+  --fixed-font-family: "Fira Sans";
+
+  /* body sizes */
+  --body-font-size-m: 22px;
+  --body-font-size-s: 18px;
+  --body-font-size-xs: 16px;
+
+  /* heading sizes */
+  --heading-font-size-xxl: 48px;
+  --heading-font-size-xl: 40px;
+  --heading-font-size-l: 32px;
+  --heading-font-size-m: 24px;
+  --heading-font-size-s: 20px;
+  --heading-font-size-xs: 18px;
+
+  /* nav height */
+  --nav-height: 80px;
+}
+
+@font-face {
+  font-family: roboto-fallback;
+  size-adjust: 100.06%;
+  ascent-override: 95%;
+  src: local("Arial");
+}
+
+@media (width >= 900px) {
+  :root {
+    --heading-font-size-xxl: 60px;
+    --heading-font-size-xl: 48px;
+    --heading-font-size-l: 36px;
+    --heading-font-size-m: 30px;
+    --heading-font-size-s: 24px;
+    --heading-font-size-xs: 22px;
+  }
+}
+
+body {
+  font-size: var(--body-font-size-m);
+  margin: 0;
+  font-family: var(--body-font-family);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: none;
+}
+
+body.appear {
+  display: block;
+}
+
+header {
+  height: var(--nav-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+h1 {
+  font-size: var(--heading-font-size-xxl);
+}
+h2 {
+  font-size: var(--heading-font-size-xl);
+}
+h3 {
+  font-size: var(--heading-font-size-l);
+}
+h4 {
+  font-size: var(--heading-font-size-m);
+}
+h5 {
+  font-size: var(--heading-font-size-s);
+}
+h6 {
+  font-size: var(--heading-font-size-xs);
+}
+
+p,
+dl,
+ol,
+ul,
+pre,
+blockquote {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+code,
+pre {
+  font-family: var(--fixed-font-family);
+  font-size: var(--body-font-size-s);
+}
+
+code {
+  padding: 0.125em;
+}
+
+pre {
+  overflow: scroll;
+}
+
+main pre {
+  background-color: var(--light-color);
+  padding: 1em;
+  border-radius: 0.25em;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* links */
+a:any-link {
+  /* color: var(--link-color); */
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+/*
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+}
+*/
+
+/* buttons */
+/*
+a.button:any-link,
+button {
+  font-family: var(--body-font-family);
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 5px 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--background-color);
+  background-color: var(--link-color);
+  margin: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 30px;
+}
+
+a.button:hover,
+a.button:focus,
+button:hover,
+button:focus {
+  background-color: var(--link-hover-color);
+  cursor: pointer;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: var(--light-color);
+  cursor: unset;
+}
+
+a.button.secondary,
+button.secondary {
+  background-color: unset;
+  border: 2px solid currentcolor;
+  color: var(--text-color);
+}
+
+main img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+*/
+
+/* sections
+main .section {
+  padding: 64px 16px;
+}
+
+@media (width >= 600px) {
+  main .section {
+    padding: 64px 32px;
+  }
+}
+
+@media (width >= 900px) {
+  .section > div {
+    max-width: 1200px;
+    margin: auto;
+  }
+} */
+/* section metadata
+main .section.light,
+main .section.highlight {
+  background-color: var(--light-color);
+}
+*/
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,1447 @@
+/* add global styles that can be loaded post LCP here */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------
+        variables
+      ----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+        breakpoints
+      ----------------------------------------------------------------*/
+/* @media (min-width: 999px) {
+      .container{width:100%}
+    }
+    @media (min-width: 1024px) {
+      .container{width:1024px}
+    }
+    @media (min-width: 1280px) {
+      .container{width:1280px}
+    }
+    @media (min-width: 1366px) {
+      .container{width:1366px}
+    } */
+
+/*----------------------------------------------------------------
+        grid alignment
+      ----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+        column widths
+      ----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+        column offsets
+      ----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+        column ordering
+      ----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+        columns defaults
+      ----------------------------------------------------------------*/
+[class*="col-"] {
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*----------------------------------------------------------------
+        row
+      ----------------------------------------------------------------*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+/*----------------------------------------------------------------
+        css output
+      ----------------------------------------------------------------*/
+.col-xs-1 {
+  flex-basis: 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.col-xs-2 {
+  flex-basis: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-xs-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  flex-basis: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-xs-5 {
+  flex-basis: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-xs-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  flex-basis: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-xs-8 {
+  flex-basis: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-xs-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  flex-basis: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-xs-11 {
+  flex-basis: 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.3333333333%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.6666666667%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.3333333333%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.6666666667%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.3333333333%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.6666666667%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.3333333333%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.6666666667%;
+}
+
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+.col-xs-ord-1 {
+  order: 1;
+}
+
+.col-xs-ord-2 {
+  order: 2;
+}
+
+.col-xs-ord-3 {
+  order: 3;
+}
+
+.col-xs-ord-4 {
+  order: 4;
+}
+
+.col-xs-ord-5 {
+  order: 5;
+}
+
+.col-xs-ord-6 {
+  order: 6;
+}
+
+.col-xs-ord-7 {
+  order: 7;
+}
+
+.col-xs-ord-8 {
+  order: 8;
+}
+
+.col-xs-ord-9 {
+  order: 9;
+}
+
+.col-xs-ord-10 {
+  order: 10;
+}
+
+.col-xs-ord-11 {
+  order: 11;
+}
+
+.col-xs-ord-12 {
+  order: 12;
+}
+
+.start-xs {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.center-xs {
+  justify-content: center;
+  text-align: center;
+}
+
+.end-xs {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.top-xs {
+  align-items: flex-start;
+}
+
+.middle-xs {
+  align-items: center;
+}
+
+.bottom-xs {
+  align-items: flex-end;
+}
+
+.around-xs {
+  justify-content: space-around;
+}
+
+.between-xs {
+  justify-content: space-between;
+}
+
+.first-xs {
+  order: -1;
+}
+
+.last-xs {
+  order: 1;
+}
+
+@media (min-width: 999px) {
+  .container {
+    width: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .col-sm-1 {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-sm-2 {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-sm-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-sm-5 {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-sm-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-sm-8 {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-sm-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-sm-11 {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-sm-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-sm-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-sm-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-sm-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-sm-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-sm-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-sm-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-sm-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-sm-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  .col-sm-ord-1 {
+    order: 1;
+  }
+
+  .col-sm-ord-2 {
+    order: 2;
+  }
+
+  .col-sm-ord-3 {
+    order: 3;
+  }
+
+  .col-sm-ord-4 {
+    order: 4;
+  }
+
+  .col-sm-ord-5 {
+    order: 5;
+  }
+
+  .col-sm-ord-6 {
+    order: 6;
+  }
+
+  .col-sm-ord-7 {
+    order: 7;
+  }
+
+  .col-sm-ord-8 {
+    order: 8;
+  }
+
+  .col-sm-ord-9 {
+    order: 9;
+  }
+
+  .col-sm-ord-10 {
+    order: 10;
+  }
+
+  .col-sm-ord-11 {
+    order: 11;
+  }
+
+  .col-sm-ord-12 {
+    order: 12;
+  }
+
+  .start-sm {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-sm {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-sm {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-sm {
+    align-items: flex-start;
+  }
+
+  .middle-sm {
+    align-items: center;
+  }
+
+  .bottom-sm {
+    align-items: flex-end;
+  }
+
+  .around-sm {
+    justify-content: space-around;
+  }
+
+  .between-sm {
+    justify-content: space-between;
+  }
+
+  .first-sm {
+    order: -1;
+  }
+
+  .last-sm {
+    order: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  .col-md-1 {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-md-2 {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-md-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-md-5 {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-md-8 {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-md-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-md-11 {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-md-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-md-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-md-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-md-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-md-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-md-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  .col-md-ord-1 {
+    order: 1;
+  }
+
+  .col-md-ord-2 {
+    order: 2;
+  }
+
+  .col-md-ord-3 {
+    order: 3;
+  }
+
+  .col-md-ord-4 {
+    order: 4;
+  }
+
+  .col-md-ord-5 {
+    order: 5;
+  }
+
+  .col-md-ord-6 {
+    order: 6;
+  }
+
+  .col-md-ord-7 {
+    order: 7;
+  }
+
+  .col-md-ord-8 {
+    order: 8;
+  }
+
+  .col-md-ord-9 {
+    order: 9;
+  }
+
+  .col-md-ord-10 {
+    order: 10;
+  }
+
+  .col-md-ord-11 {
+    order: 11;
+  }
+
+  .col-md-ord-12 {
+    order: 12;
+  }
+
+  .start-md {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-md {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-md {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-md {
+    align-items: flex-start;
+  }
+
+  .middle-md {
+    align-items: center;
+  }
+
+  .bottom-md {
+    align-items: flex-end;
+  }
+
+  .around-md {
+    justify-content: space-around;
+  }
+
+  .between-md {
+    justify-content: space-between;
+  }
+
+  .first-md {
+    order: -1;
+  }
+
+  .last-md {
+    order: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+  .col-lg-1 {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-lg-2 {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-lg-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-lg-5 {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-lg-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-lg-8 {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-lg-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-lg-11 {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-lg-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-lg-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-lg-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-lg-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-lg-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-lg-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  .col-lg-ord-1 {
+    order: 1;
+  }
+
+  .col-lg-ord-2 {
+    order: 2;
+  }
+
+  .col-lg-ord-3 {
+    order: 3;
+  }
+
+  .col-lg-ord-4 {
+    order: 4;
+  }
+
+  .col-lg-ord-5 {
+    order: 5;
+  }
+
+  .col-lg-ord-6 {
+    order: 6;
+  }
+
+  .col-lg-ord-7 {
+    order: 7;
+  }
+
+  .col-lg-ord-8 {
+    order: 8;
+  }
+
+  .col-lg-ord-9 {
+    order: 9;
+  }
+
+  .col-lg-ord-10 {
+    order: 10;
+  }
+
+  .col-lg-ord-11 {
+    order: 11;
+  }
+
+  .col-lg-ord-12 {
+    order: 12;
+  }
+
+  .start-lg {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-lg {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-lg {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-lg {
+    align-items: flex-start;
+  }
+
+  .middle-lg {
+    align-items: center;
+  }
+
+  .bottom-lg {
+    align-items: flex-end;
+  }
+
+  .around-lg {
+    justify-content: space-around;
+  }
+
+  .between-lg {
+    justify-content: space-between;
+  }
+
+  .first-lg {
+    order: -1;
+  }
+
+  .last-lg {
+    order: 1;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 1366px;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+  .col-xl-1 {
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+
+  .col-xl-2 {
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+
+  .col-xl-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-xl-4 {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+
+  .col-xl-5 {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+
+  .col-xl-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-xl-7 {
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+
+  .col-xl-8 {
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+
+  .col-xl-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-xl-10 {
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+
+  .col-xl-11 {
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+
+  .col-xl-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-xl-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-xl-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-xl-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-xl-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-xl-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-xl-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-xl-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-xl-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-xl-offset-12 {
+    margin-left: 100%;
+  }
+
+  .col-xl-ord-1 {
+    order: 1;
+  }
+
+  .col-xl-ord-2 {
+    order: 2;
+  }
+
+  .col-xl-ord-3 {
+    order: 3;
+  }
+
+  .col-xl-ord-4 {
+    order: 4;
+  }
+
+  .col-xl-ord-5 {
+    order: 5;
+  }
+
+  .col-xl-ord-6 {
+    order: 6;
+  }
+
+  .col-xl-ord-7 {
+    order: 7;
+  }
+
+  .col-xl-ord-8 {
+    order: 8;
+  }
+
+  .col-xl-ord-9 {
+    order: 9;
+  }
+
+  .col-xl-ord-10 {
+    order: 10;
+  }
+
+  .col-xl-ord-11 {
+    order: 11;
+  }
+
+  .col-xl-ord-12 {
+    order: 12;
+  }
+
+  .start-xl {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-xl {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-xl {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .top-xl {
+    align-items: flex-start;
+  }
+
+  .middle-xl {
+    align-items: center;
+  }
+
+  .bottom-xl {
+    align-items: flex-end;
+  }
+
+  .around-xl {
+    justify-content: space-around;
+  }
+
+  .between-xl {
+    justify-content: space-between;
+  }
+
+  .first-xl {
+    order: -1;
+  }
+
+  .last-xl {
+    order: 1;
+  }
+}

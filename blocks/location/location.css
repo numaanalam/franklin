@@ -1,0 +1,106 @@
+.location-btn {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #f2f2f2;
+  background-color: #18171a;
+  border: none;
+  display:flex;
+  align-items: center;
+}
+.location-btn::after{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/collapes.svg"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.location-btn:hover {
+  color: #FFFFFF;
+  font-weight:500;
+}
+.geo-location {
+  display: none;
+  z-index:999;
+  position:absolute;
+  top:var(--nav-height);
+  right:50px;
+  width: 360px;
+  background-color: #FFFFFF;
+  p{
+    margin:unset;
+  }
+}
+.geo-location__text {
+  background-color: #f2f2f2;
+  padding: 32px 46px 24px 24px;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 55% 92%, 52% 100%, 0 100%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height:20px;
+  color: #18171a;
+}
+.detect-location {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: left;
+}
+.find-location__text {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7b7777;
+  padding: 16px 12px 16px 0px;
+  display:flex;
+  align-items: center;
+  gap:12px;
+}
+.find-location__text::before{
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/location.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.separator {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight:400;
+  line-height:20px;
+  color:#18171a;
+}
+.detect-location__text {
+  padding: 16px 12px;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #18171a;
+  background-color: #f2f2f2;
+  display:flex;
+  align-items: center;
+  gap:12px;
+}
+.detect-location__text::before{
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/detect_location.svg"); /* Update with your actual icon path */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.search-location {
+  display: none;
+}
+ 

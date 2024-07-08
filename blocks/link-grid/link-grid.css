@@ -1,0 +1,98 @@
+.link-container-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex: 1 1 55%;
+}
+.link-grid-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+.link-grid-column h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  margin: 0 0 32px 0;
+  padding: 16px 0;
+}
+
+.link-grid-column .links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.link-grid-column .links-container li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.link-grid-column .links-container li a {
+  display: inline-block;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  min-height: 40px;
+  color: var(--tertiary-medium-grey);
+}
+
+.accordion-item {
+  cursor: pointer;
+  user-select: none;
+}
+.accordion-item .content {
+  display: none;
+  padding-left: 20px;
+}
+.accordion-item.active .content {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blackGrid {
+  background-color: black;
+}
+
+.blackGrid .link-grid-column h3 {
+  color: white;
+}
+
+.blackGrid .link-grid-column a {
+  color: #e5e7eb;
+}
+
+.whiteGrid {
+  background-color: white;
+}
+
+.whiteGrid .link-grid-column h3 {
+  color: black;
+}
+
+.whiteGrid .link-grid-column a {
+  color: #262424;
+}
+
+@media (min-width: 768px) {
+  .link-grid-column .links-container {
+    gap: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .link-container-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex: 1 1 55%;
+  }
+}

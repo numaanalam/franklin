@@ -1,0 +1,1011 @@
+{
+  "groups": [
+    {
+      "title": "Default Content",
+      "id": "default",
+      "components": [
+        {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Title",
+          "id": "title",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/title/v1/title",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/image/v1/image",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Button",
+          "id": "button",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/button/v1/button",
+                "template": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "title": "Section",
+          "id": "section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "title": "Columns",
+          "id": "columns",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/columns/v1/columns",
+                "template": {
+                  "columns": "2",
+                  "rows": "1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Hero",
+          "id": "hero",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hero",
+                  "model": "hero"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards",
+                  "filter": "cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel",
+          "id": "carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel",
+                  "filter": "carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Card",
+          "id": "card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Card",
+                  "model": "card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Quote",
+          "id": "quote",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Quote",
+                  "model": "quote",
+                  "quote": "<p>Think, McFly! Think!</p>",
+                  "author": "Biff Tannen"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Personal",
+          "id": "personal",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Personal",
+                  "model": "quote",
+                  "quote": "<p>This is second quote</p>",
+                  "author": "Prakhar"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Teaser",
+          "id": "teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Teaser",
+                  "model": "teaser",
+                  "filter": "teaser",
+                  "title": "Teaser Title",
+                  "description": "<p>This is <b>description</b></p>",
+                  "target": "_self",
+                  "titleType": "h3"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "List",
+          "id": "list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "List",
+                  "filter": "list"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "List Item",
+          "id": "listItem",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "List Item",
+                  "model": "teaser",
+                  "filter": "listItem",
+                  "title": "List Item Title",
+                  "description": "<p>This is <b>description</b></p>"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "CTA",
+          "id": "cta",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "CTA",
+                  "model": "cta"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "3D Configurator",
+          "id": "3dConfigurator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "3D Configurator",
+                  "model": "3dConfigurator"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "3D Configurator JS",
+          "id": "3dConfigurator-js",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "3D Configurator JS",
+                  "model": "3dConfigurator-js"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Links",
+          "id": "links",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Links",
+                  "filter": "links"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Link Item",
+          "id": "linkItem",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Link Item",
+                  "model": "linkItem"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Visual Comparison",
+          "id": "visual-comparison",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Visual Comparison",
+                  "model": "visual-comparison"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Visual Comparison Blob",
+          "id": "visual-comparison-blob",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Visual Comparison Blob",
+                  "model": "visual-comparison-blob"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Link Grid",
+          "id": "link-grid",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Link Grid",
+                  "model": "link-list"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Logo",
+          "id": "logo",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Logo",
+                  "model": "logo"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nav Cars",
+          "id": "nav-cars",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nav Cars",
+                  "model": "nav-cars"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nav Compare",
+          "id": "nav-compare",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nav Compare",
+                  "model": "nav-compare"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Search",
+          "id": "search",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Search",
+                  "model": "search"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Teaser List",
+          "id": "teaser-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Teaser List",
+                  "filter": "teaser-list",
+                  "model": "teaser-list",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Sign In",
+          "id": "sign-in",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Sign In",
+                  "model": "sign-in",
+                  "filter": "sign-in",
+                  "target": "_self"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Contact",
+          "id": "contact",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Contact",
+                  "model": "contact",
+                  "filter": "contact"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "CTA with Icon",
+          "id": "ctaWithIcon",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "CTA with Icon",
+                  "model": "ctaWithIcon",
+                  "target": "_self"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Icon with Title",
+          "id": "icontitle",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "IconTitle",
+                  "model": "icontitle"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nitesh Test Component",
+          "id": "nitesh-test",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nitesh Test Template",
+                  "filter": "nitesh-test",
+                  "model": "nitesh-test"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Immersive Teaser",
+          "id": "immersive-teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Immersive Teaser",
+                  "filter": "immersive-teaser",
+                  "model": "immersive-teaser",
+                  "title": "Immersive Teaser",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlight Tabs",
+          "id": "highlight-tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Highlight Tabs",
+                  "filter": "highlight-tabs",
+                  "title": "Highlight Tabs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlight Item",
+          "id": "highlight-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Highlight Item",
+                  "model": "highlight-item",
+                  "title": "Highlight Item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Filter",
+          "id": "car-filter",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Filter",
+                  "model": "car-filter",
+                  "title": "Car Filter",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Test Teaser",
+          "id": "test-teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Test Teaser",
+                  "model": "teaser"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Widget",
+          "id": "widget",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Widget",
+                  "model": "widget",
+                  "filter": "widget"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa World Component",
+          "id": "nexa-world",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nexa World Component",
+                  "filter": "nexa-world",
+                  "model": "nexa-world",
+                  "title": "Nexa World"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Location",
+          "id": "location",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Location",
+                  "model": "location",
+                  "filter": "location"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Hero Banner",
+          "id": "nexa-hero-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nexa Hero Banner",
+                  "model": "nexa-hero-banner",
+                  "filter": "nexa-hero-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Hero Banner Item",
+          "id": "nexa-hero-banner-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Nexa Hero Banner Item",
+                  "model": "nexa-hero-banner-item",
+                  "titleType": "h2",
+                  "allowMobileVideo": false,
+                  "addMobileImage": false
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Banner Carousel",
+          "id": "banner-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Banner Carousel",
+                  "model": "banner-carousel",
+                  "filter": "banner-carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Banner Carousel Car",
+          "id": "banner-carousel-car",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Banner Carousel Car",
+                  "model": "banner-carousel-car"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Eshowroom Experience",
+          "id": "nexa-eshowroom-experience",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nexa Eshowroom Experience",
+                  "model": "nexa-eshowroom-experience",
+                  "filter": "nexa-eshowroom-experience"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Eshowroom Experience Item",
+          "id": "nexa-eshowroom-experience-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Nexa Eshowroom Experience",
+                  "model": "nexa-eshowroom-experience-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Slider",
+          "id": "slider",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Slider",
+                  "model": "slider",
+                  "filter": "slider"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Best Deals",
+          "id": "best-deals",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Best Deals",
+                  "model": "best-deals",
+                  "filter": "best-deals"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Video Teaser",
+          "id": "video-teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Video Teaser",
+                  "model": "video-teaser"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "CTA with Changing Icon",
+          "id": "ctaWithChangingIcon",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "CTA with Changing Icon",
+                  "model": "ctaWithChangingIcon",
+                  "target": "_self"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlights",
+          "id": "highlights",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Highlights",
+                  "filter": "highlights"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Highlight",
+          "id": "highlight",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Highlight",
+                  "model": "highlight",
+                  "titleType": "h4"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Arena Help Me Select",
+          "id": "arena-help-me-select",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Arena Help Me Select",
+                  "model": "arena-help-me-select"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Finance Options",
+          "id": "finance-options",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Finance Options",
+                  "filter": "finance-options"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Arena Help Me Select",
+          "id": "arena-help-me-select",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Arena Help Me Select",
+                  "model": "arena-help-me-select"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Intro To Design Details",
+          "id": "intro-to-design-car-detail",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Intro To Design Details Car Details",
+                  "model": "intro-to-design-car-detail",
+                  "filter": "intro-to-design-car-detail"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Car Detail Feature",
+          "id": "car-detail-feature",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Car Detail Feature",
+                  "model": "car-detail-feature"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Car Hero Banner",
+          "id": "nexa-car-hero-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nexa Car Hero Banner",
+                  "model": "nexa-car-hero-banner",
+                  "filter": "nexa-car-hero-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Car Hero Banner Item",
+          "id": "nexa-car-hero-banner-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Nexa Car Hero Banner Item",
+                  "model": "nexa-car-hero-banner-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Brand Film Carousel",
+          "id": "nexa-brand-film-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Nexa Brand Film Carousel",
+                  "model": "nexa-brand-film-carousel",
+                  "filter": "nexa-brand-film-carousel",
+                  "titleType": "h2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Item",
+          "id": "nexa-brand-film-carousel-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Nexa Brand Film Carousel",
+                  "model": "nexa-brand-film-carousel-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Finance Entry Point",
+          "id": "finance-entry-point",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Finance Entry Point",
+                  "filter": "finance-entry-point"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Section Navigator",
+          "id": "section-navigator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Section Navigator",
+                  "filter": "section-navigator"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

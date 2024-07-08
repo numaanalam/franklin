@@ -1,0 +1,334 @@
+.helpme-select {
+  width: 100%;
+  height: auto;
+  background-color: #C8042F;
+  position: relative;
+}
+
+.helpme-select .content__container .left__content {
+  padding: 20px;
+}
+
+.helpme-select .content__container .left__content .title {
+  color: #FFF;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.helpme-select .content__container .left__content h2 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.helpme-select .content__container .left__content .subtitle {
+  border-top: 1px solid white;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 12px;
+  padding-top: 8px;
+  max-width: 247px;
+}
+
+.car__carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  z-index: 10;
+}
+
+.carousel-image.car {
+  position: absolute;
+  height: 160px;
+  width: 300px;
+}
+
+.car__carousel .image-container.next .carLogo,
+.car__carousel .image-container.prev .carLogo {
+  display: none;
+}
+
+.image-container.active {
+  left: 8%;
+  top: 0;
+  position: absolute;
+  transform: scale(1.3);
+}
+
+.image-container.next {
+  position: absolute;
+  right: 14%;
+  top: 44%;
+
+}
+
+.image-container.prev {
+  position: absolute;
+  bottom: -28px;
+  right: 0;
+}
+
+.image-container {
+  width: 300px;
+  height: 180px;
+  display: block;
+}
+
+.image-container .carImage img {
+  height: auto;
+  width: 100%;
+}
+
+.image-container.active .carLogo {
+  width: 84px;
+  height: 44px;
+  display: block;
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.image-container.active .carLogo img {
+  height: auto;
+  width: 100%;
+}
+
+.white-vertical__rectangle {
+  width: 100%;
+  min-height: 140px;
+  height: auto;
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  display: flex;
+  padding-left: 20px;
+}
+
+.right__content {
+  position: relative;
+}
+
+.helpme-select .right__content .dummy__text {
+  display: none;
+}
+
+.vertical__rectangle {
+  width: 100%;
+  height: 125px;
+  position: absolute;
+  bottom: 18%;
+  background-color: #CD1D44;
+}
+
+.helpme-select .left__content .button.primary__btn {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  padding: inherit;
+  background-color: rgba(255, 255, 255, 0.20);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" fill="white" fill-opacity="0.05"/><path d="M11.1075 39L9 36.8925L31.8925 14H18V11H37V30H34V16.1075L11.1075 39Z" fill="white"/></svg>');
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.helpme-select .left__content .button-container {
+  display: block;
+  float: right;
+  position: relative;
+  margin-top: -42px;
+}
+
+.rect-box {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.40);
+}
+
+.rect-bar1 {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.40);
+}
+
+@media (min-width: 1023px) {
+  .helpme-select {
+    width: 100%;
+    min-height: 480px;
+    height: auto;
+    background-color: #C8042F;
+  }
+
+
+  .helpme-select .rect-box {
+    width: 81px;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #D33659;
+  }
+
+  .helpme-select .rect-bar1 {
+    width: 39px;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    right: 43px;
+    background: rgba(255, 255, 255, 0.40);
+  }
+
+  .helpme-select .rect-bar2 {
+    width: 43px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.20);
+  }
+
+  .vertical__rectangle {
+    width: 171px;
+    height: 100%;
+    position: absolute;
+    right: 15%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.10);
+  }
+
+  .white-vertical__rectangle {
+    width: 231px;
+    height: 100%;
+    margin-left: 125px;
+    background: #FFF;
+    text-align: center;
+  }
+
+  .white-vertical__rectangle img {
+    margin-top: 25%;
+  }
+
+  .helpme-select .left__content .button-container {
+    float: unset;
+    margin-top: 10px;
+  }
+
+  .helpme-select .content__container .left__content {
+    width: 100%;
+    position: relative;
+    max-width: 400px;
+    padding-left: 63px;
+    padding-top: 52px;
+  }
+
+  .helpme-select .content__container .left__content .title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .helpme-select .content__container .left__content h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 36px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    margin: 0;
+  }
+
+  .helpme-select .content__container .left__content h2.heading2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .image-container.active .carLogo {
+    top: auto;
+    left: auto;
+  }
+
+  .right__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: calc(100% - 400px);
+  }
+
+  .car__carousel {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .image__wrapper {
+    display: flex;
+  }
+
+  .helpme-select .right__content .dummy__text {
+    position: absolute;
+    bottom: 4%;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 240px;
+    right: 14%;
+    display: block;
+  }
+  .carousel-image.next {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+
+  .carousel-image.prev {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+
+  }
+
+  .image-container.active {
+    transform: scale(2.0);
+    position: absolute;
+    left: 12%;
+    bottom: 28%;
+    top: auto;
+
+    .carLogo {
+      margin-left: 32%;
+    }
+  }
+
+  .image-container.next {
+    position: absolute;
+    right: 12%;
+    bottom: 42%;
+    top: auto;
+  }
+
+  .image-container.prev {
+    position: absolute;
+    right: 0;
+    bottom: 12%;
+  }
+}
