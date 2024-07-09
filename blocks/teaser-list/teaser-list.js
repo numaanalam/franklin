@@ -86,6 +86,8 @@ export default function decorate(block) {
   }
 
   const [titleEl, themeEl, themeTypeEl, ...teaserListEl] = block.children;
+  console.log(teaserListEl);
+
   const theme = themeEl?.textContent?.trim();
   const themeType = themeTypeEl?.textContent?.trim();
   if (theme) {
